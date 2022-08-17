@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="color: aliceblue; margin-left: 200px;">Calculator</h1>
+    <form action="" onsubmit="doFun;return false" style="margin-left:200px ;">
+        <input style="width: 130px;" id="firstnumber" type="text" placeholder="First Number" required>
+<input type="sign" placeholder="Enter + - * /" id="operation">
+        <input type="text" style="width: 130px;" placeholder="Second Number" id="secondnumber" required>
+    
+    </form>
+<br>
+<button onsubmit="doSum(); return false">Submit</button>
+<p style="color: aliceblue;"> Result</p><h1 id="r" style="color: aliceblue;"></h1>       
+  
+    
+<script>
+    function doSum(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber + secondnumber;
+
+        let operation= document.querySelector('#operation').
+
+
+if(operation==="+")
+{
+    ra.innerHTML=firstnumber+secondnumber;
+}
+
+else if(operation==="-")
+{
+    r.innerHTML=firstnumber-secondnumber;
+}
+
+
+else if(operation==="*")
+{
+    r.innerHTML=firstnumber*secondnumber;
+}
+else if(operation==="/")
+{
+    r.innerHTML=firstnumber/secondnumber;
+}
+else if(operation=="**")
+{
+    r.innerHTML=firstnumber**secondnumber;
+}
+else if(operation=="%")
+{
+    r.innerHTML=firstnumber%secondnumber;
+}
+else{
+    r.innerHTML="invalid operator"
+}
+
+}
+    
+    
+    function doSub(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber - secondnumber;
+             
+        document.querySelector('#r').innerHTML=sum;
+    }
+    
+    
+    
+    function doMu(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber * secondnumber;
+             
+        document.querySelector('#r').innerHTML=sum;
+    }
+    
+    
+    
+    
+    
+    function doDi(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber / secondnumber;
+             
+        document.querySelector('#r').innerHTML=sum;
+    }
+    
+    
+    function doPo(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber ** secondnumber;
+             
+        document.querySelector('#r').innerHTML=sum;
+    }
+    
+    function doMo(){
+        let firstnumber=Number(document.querySelector('#firstnumber').value)
+        
+        let secondnumber=Number(document.querySelector('#secondnumber').value)
+        let sum= firstnumber % secondnumber;
+             
+        document.querySelector('#r').innerHTML=sum;
+    }
+    
+    
+    
+    
+        </script>
+</body>
+</html>
